@@ -1,0 +1,56 @@
+﻿@page
+@model X22_Lab5_6.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+<h1>@ViewData["Title"]</h1>
+
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>            
+
+            <div class="form-group">
+                <label asp-for="Contact.Name" class="control-label"></label>
+                <input asp-for="Contact.Name" class="form-control" />
+                <span asp-validation-for="Contact.Name" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Contact.StreetNumber" class="control-label"></label>
+                <input asp-for="Contact.StreetNumber" class="form-control" />
+                <span asp-validation-for="Contact.StreetNumber" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Contact.StreetName" class="control-label"></label>
+                <input asp-for="Contact.StreetName" class="form-control" />
+                <span asp-validation-for="Contact.StreetName" class="text-danger"></span>
+            </div>
+        
+            <div class="form-group">
+                <label asp-for="Contact.PostalCode" class="control-label"></label>
+                <input asp-for="Contact.PostalCode" class="form-control" />
+                <span asp-validation-for="Contact.PostalCode" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Contact.City" class="control-label"></label>
+                <input asp-for="Contact.City" class="form-control" />
+                <span asp-validation-for="Contact.City" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Contact.Province" class="control-label"></label>
+                <input asp-for="Contact.Province" class="form-control" />
+                <span asp-validation-for="Contact.Province" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Contact.Phone" class="control-label"></label>
+                <input asp-for="Contact.Phone" class="form-control" />
+                <span asp-validation-for="Contact.Phone" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        </form>
