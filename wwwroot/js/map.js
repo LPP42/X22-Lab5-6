@@ -1,8 +1,4 @@
-
-
-
 const mapEl = document.getElementById("map");
-mapEl.innerHTML = `<div>somehting</div>`
 
 mapboxgl.accessToken = "pk.eyJ1IjoibHBwNDIiLCJhIjoiY2wyYWZtNTFjMDUwMzNpcW50c3oyemp3aiJ9.EcrbBNeaSRbjO0IeCzlbnA";
 
@@ -15,10 +11,10 @@ let mapInit = async function() {
     });
 }
 
-// let placeContacts = async function(){
 
-//     contacts.forEach(element => {
-    
-// });
+
+
+
+
 
 mapInit();
